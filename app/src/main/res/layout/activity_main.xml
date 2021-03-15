@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A7E1F"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/myStyle"
+        android:text="Welcome in BMI Application"
+        android:textColor="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:shadowColor="#EDE3E3"
+        android:text='Enter Your weigh "in kg"'
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/weigh"
+        style="@style/mystyleforEdit"
+        android:inputType="numberSigned"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text='Enter Your height "in cm"'
+        android:textColor="#F1E4E4"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/height"
+        style="@style/mystyleforEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:paddingTop="30dp" />
+
+    <Button
+        android:id="@+id/findbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="350dp"
+        android:onClick="findBMI"
+        android:text="Find BMI"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textColorLink="#03A9F4"
+        android:textSize="24sp"
+        app:backgroundTint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingTop="50dp"
+        android:textColor="#A30606"
+        android:visibility="gone" />
+</androidx.appcompat.widget.LinearLayoutCompat>
